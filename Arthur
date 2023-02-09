@@ -1,0 +1,18 @@
+import javax.swing.JOptionPane;
+
+
+public class MA {
+    
+     public static void main( String [] args )
+     { 
+         String pesostr = JOptionPane.showInputDialog( "Digite peso " );
+         String alturastr = JOptionPane.showInputDialog( " Digite altura " );
+         
+         double altura = Double.parseDouble( alturastr );
+         double peso  = Double.parseDouble( pesostr );
+         
+         double sum = peso / (altura*altura);
+         
+         JOptionPane.showMessageDialog(null, "Cálculo: " + sum, "Medida", JOptionPane.PLAIN_MESSAGE);
+    }
+} 
